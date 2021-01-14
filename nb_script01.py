@@ -68,7 +68,7 @@ def getMacTable(host,vend):
     if vend.lower() == 'allied telesys':
         command = 'show mac addr'
     if vend.lower() == 'juniper':
-        command = ''
+        command = 'show ethernet-switching table brief'
 
     try:
         host1 = host
